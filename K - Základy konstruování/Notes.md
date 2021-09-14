@@ -1,0 +1,1 @@
+# KONSTRUOVÁNÍ - POZNÁMKY 

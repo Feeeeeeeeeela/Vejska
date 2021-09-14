@@ -1,0 +1,1 @@
+# STROJAŘINA - POZNÁMKY 
