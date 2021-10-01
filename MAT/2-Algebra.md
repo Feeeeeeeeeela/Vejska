@@ -62,3 +62,15 @@ $(A^{T})^{T}$ = A
 * Zjišťuje se úpravou matice do "schodovitého tvaru"
 ![závislost](img/hodnost.png)
 ### Inverzní matice
+- $A´$ nebo $inv(A)$, kdy matice $A$ musí být regulární ($det(A)≠0$ => matice musí být čtvercová)
+- $A * A´ = A´ * A = E$
+- Vytváří se převodem $(A \ E) ~ ... ~ (E \ A´)$
+![inverze1](img/inverze1.png)
+![inverze](img/inverze2.png)
+
+### Adjungovaná matice
+- $A^* = (d_{ij})^T   d_{ij}=(-1)^{i+j}*|A_{ij}|$
+- $A^{-1} = \frac {1} {det(A)} * A^*$
+
+![adjung](img/adjung.png)
+![adjung](img/adjung2.png)
