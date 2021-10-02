@@ -53,14 +53,17 @@ $(A^{T})^{T}$ = A
 
 ![závislost](img/závislost.png)
 ### Lineární řádkové úpravy matic
+
 1. Změna pořadí sloupců/řádku
 2. Sloupec/řádek vynásobíme nenulovým číslem
 3. Ke sloupci přičteme lineární kombinaci jiných sloupců (samozřejmě se může i násobek)
 4. Vypustíme nulový sloupec
 ### Hodnost
+
 * Určuje počet kolik řádků je "lineárně nezávislých"
 * Zjišťuje se úpravou matice do "schodovitého tvaru"
 ![závislost](img/hodnost.png)
+
 ### Inverzní matice
 - $A´$ nebo $inv(A)$, kdy matice $A$ musí být regulární ($det(A)≠0$ => matice musí být čtvercová)
 - $A * A´ = A´ * A = E$
@@ -71,6 +74,12 @@ $(A^{T})^{T}$ = A
 ### Adjungovaná matice
 - $A^* = (d_{ij})^T   d_{ij}=(-1)^{i+j}*|A_{ij}|$
 - $A^{-1} = \frac {1} {det(A)} * A^*$
-
 ![adjung](img/adjung.png)
 ![adjung](img/adjung2.png)
+
+### Soustava lineárních rovnic
+* řešení soustavy linárních rovnic pomocí matic
+  ![linrovnice](img/linrovnice1.png)
+* Využívá se opět Gausova eliminace:
+  ![linrovnice](img/linrovnice2.png)
+
