@@ -65,21 +65,55 @@ $(A^{T})^{T}$ = A
 ![závislost](img/hodnost.png)
 
 ### Inverzní matice
-- $A´$ nebo $inv(A)$, kdy matice $A$ musí být regulární ($det(A)≠0$ => matice musí být čtvercová)
-- $A * A´ = A´ * A = E$
-- Vytváří se převodem $(A \ E) ~ ... ~ (E \ A´)$
+- $A^{-1}$ nebo $inv(A)$, kdy matice $A$ musí být regulární ($det(A)≠0$ => matice musí být čtvercová)
+- $A * A^{-1} = A^{-1} * A = E$
+- Vytváří se převodem $(A | E) ~ ... ~ (E | A^{-1})$
 ![inverze1](img/inverze1.png)
 ![inverze](img/inverze2.png)
 
 ### Adjungovaná matice
 - $A^* = (d_{ij})^T   d_{ij}=(-1)^{i+j}*|A_{ij}|$
-- $A^{-1} = \frac {1} {det(A)} * A^*$
-![adjung](img/adjung.png)
-![adjung](img/adjung2.png)
+- $A^{-1} = \frac {1} {det(A)} * A^*$      
+![adjung](img/adjung.png)     
+![adjung](img/adjung2.png)       
 
 ### Soustava lineárních rovnic
 * řešení soustavy linárních rovnic pomocí matic
   ![linrovnice](img/linrovnice1.png)
-* Využívá se opět Gausova eliminace:
+* 2 možnosti výpočtu?
+1. Gausova eliminace:      
   ![linrovnice](img/linrovnice2.png)
+2. Cramelovo pravidlo
+   - Matice musí být regulární (determinant nesmí být 0)
+  ![cramel](img/Cramel1.png)
+  - kde matice $A_j$ vznikne z matice $A$ nahrazením j-tého sloupce pravých stran $b$
+  ![cramel](img/Cramel2.png)
 
+### Frobeirova věta - určuje počet výsledků u lineárních rovnic
+* $h(A)<h(A|b)$ - nemá řešení
+* $h(A)=h(A|b)=n$ - jedno řešení
+* $h(A)=h(A|b)<n$ - nekonečno řešení ($n-h(A)$)
+
+### Maticové rovnice
+- reminder:
+  1. $A * B ≠ B * A$
+  2. $A * E = E * A = A$
+  3. $A * A^{-1} = A^{-1} * A = E$
+- Poznámky:
+  - !!!!NIKDY SE NEDĚLÍ... max se násobí inverzí!!!!
+  - Při násobení se hledí na to zda zprava nebo zleva
+- Na příkladech:
+  1. * $A-B(Cx+D)*F=H$. . . . . $/-A$
+     * $-B(Cx+D)*F=H-A$. . . . . $/*(-B^{-1})$ zleva 
+     * $+B^{-1}(C*x+D)*F=-B^{-1}*(H-A)$
+     * $(Cx+D)*F=-B^{-1}*(H-A)$. . . . .$/*(-F^{-1})$ zprava
+     * $Cx+D=-B^{-1}*(H-A)*F^{-1}$. . . . . $-D$
+     * $C*x=-B^{-1}*(H-A)*F^{-1}-D$. . . . . $/* C^{-1}$ zleva
+     * $x=-C^{-1}[-B^{-1}*(H-A)*F^{-1}-D]$
+  2. * $2x+4A=3BA$. . . . . $/-4A$
+     * $2x=3BA-4A$. . . . . $/2^{-1} = 1/2$
+     * $x=1/2*(3BA-4A)$
+  3. * $3A+xB=C+2x$. . . . . $/-3A -2x$ 
+     * $xB-2x*E=C-3A$. . . . . "vložíme E, abychom mohli vytknout"  
+     * $x(B-2E)=C-3A$. . . . . $/*(B-2E)^{-1}$ zprava
+     * $x=(C-3A)*(B-2E)^{-1}$
