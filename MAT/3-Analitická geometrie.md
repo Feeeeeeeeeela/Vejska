@@ -28,7 +28,7 @@
   * $\vec{u}+\vec{v}=(u_x+v_x, u_y+v_y, u_z+v_z)$
   * $c*\vec{u}=(c*u_x, c*u_y, c*u_z)$
   
-* Skalární součin (
+* Skalární součin 
   * Výsledkem je číslo
   * Pokud je výsledkem 0... vektory jsou kolmé
   * $\vec{u}*\vec{v}=(u_x*v_x, u_y*v_y, u_z*v_z)$
@@ -45,7 +45,7 @@
   * $S=\vec{w}=\vec{u}*\vec{v}*\sin\alpha$
   * $\vec{u}$ x $c*\vec{v}=\vec{0}=(0,0,0)$
   * $\vec{u}$ x $\vec{v}=\begin{pmatrix}\vec{i} & \vec{j} & \vec{k}\\ u_x & u_y & u_z\\ v_x & v_y & v_z\end{pmatrix}$
-  * $\vec{u}$ x $\vec{v}=-\vec{u}$ x $\vec{v}$
+  * $\vec{u}$ x $\vec{v}=-\vec{v}$ x $\vec{u}$
     * $\vec{a}=(2,3,-1)$
     * $\vec{b}=(1,-2,3)$
     * $\vec{a}$ x $\vec{b}=\begin{pmatrix}\vec{i} & \vec{j} & \vec{k}\\ 2 & 3& -1\\ 1&-2&3\end{pmatrix}=9\vec{i}-\vec{j}-4\vec{k}-2\vec{i}-6\vec{j}-3\vec{k}=7\vec{i}-7\vec{j}-7\vec{k}$
