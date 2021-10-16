@@ -80,7 +80,7 @@ $(A^{T})^{T}$ = A
 ### Soustava lineárních rovnic
 * řešení soustavy linárních rovnic pomocí matic
   ![linrovnice](img/linrovnice1.png)
-* 2 možnosti výpočtu?
+* 2 možnosti výpočtu:
 1. Gausova eliminace:      
   ![linrovnice](img/linrovnice2.png)
 2. Cramelovo pravidlo
