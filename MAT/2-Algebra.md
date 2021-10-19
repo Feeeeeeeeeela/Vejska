@@ -7,8 +7,8 @@ $A \in R^{m*n}$ => A je typu (m,n)... m = počet řádků, n = počet sloupců
 
 ### Operace
 * Rovnost - $A = B$ - jedině pouze jsou všechny čísla ve sloupcích a řádcích stejná     
-* Transpozice - $A^{T}$=$a_{ij}^{T}$=$a_{ij}$ ![transpozice](img/transpozice.png)
-$(A^{T})^{T}$ = A
+* Transpozice - $\begin{pmatrix} 1 & 0 & 2 \\ 3 & 4 & 1 \end{pmatrix}^T=\begin{pmatrix} 1 & 3 \\ 0 & 4 \\ 2 & 1\end{pmatrix}$
+* $(A^{T})^{T}$ = A
 * Skalární násobení - $c * A = c * (A_{ij}$) - každé číslo matice se vynásobí hodnotou c
 *  Součet - $A + B$ - jde pouze když jsou stejné $(m,n) = (m,n)$ obou matic, sčítá se každá pozice v matici s tou druhou
 *  Odčítání - stejné jako u součtu jen se zapisuje - $A + (-1)*B$

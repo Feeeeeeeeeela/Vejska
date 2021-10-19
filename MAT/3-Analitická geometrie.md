@@ -32,7 +32,7 @@
   * Výsledkem je číslo
   * Pokud je výsledkem 0... vektory jsou kolmé
   * $\vec{u}*\vec{v}=(u_x*v_x, u_y*v_y, u_z*v_z)$
-  * $\vec{u}*\vec{v}=|\vec{u}|*|\vec{v}|*\cos\alpha$ z toho je možné vyjádřit $\cos\alpha$
+  * $\vec{u}*\vec{v}=|\vec{u}|*|\vec{v}|*\cos\alpha$ - z toho je možné vyjádřit $\cos\alpha$
   * $\cos\alpha=\frac{u * v}{|u|*|v|}=\frac{u_1 * v_1+u_2 * v_2+u_3*v_3}{\sqrt{u_1^2+u_2^2+u_3^2}*\sqrt{v_1^2+v_2^2+v_3^2}}$
   * pokud $\vec{u}*\vec{v}=0$ vektory jsou na sebe kolmé
     * $(3,4,1)*(6,2,7)=3*6+4*2+1*7=18+8+7=33$
@@ -40,7 +40,7 @@
 * Vektorový součin
   * Výsledek je vektor (ve 2D skalár), který je na oba vektor kolmý
   * Je roven ploše vektorů viz. obrázek
-  * $\vec{u}$ x $\vec{v}=\vec{w}$      
+  * $\vec{u}$ x $\vec{v}=\vec{w}$         
   ![vektor](img/anal2.png)
   * $S=\vec{w}=\vec{u}*\vec{v}*\sin\alpha$
   * $\vec{u}$ x $c*\vec{v}=\vec{0}=(0,0,0)$
@@ -60,7 +60,8 @@
     * $\vec{c}=(1,2,0)$
     * $[abc]=\begin{pmatrix}4 & 5 & -1 \\ 8 & 7 & -3 \\ 1 & 2 & 0\end{pmatrix}=0-15-16+24+0+7=0$
 
-### Lineární množiny v rovině
+----
+## Lineární množiny v rovině
 * Přímka v rovině:
   * 4 způsoby zápisu:
     1. obecná rovnice přímky
@@ -85,7 +86,7 @@
        * Rovnice dokáže popsat všechny přímky, avšak přímka má mnoho zápisů, protože může začínat z libovolného bodu přímky
        * Směrový vektor $s=(s_1,s_2)$, Normálový vektor $n=\pm(-s_2,s_1)$
 
-### Vzorce ve 2d
+### Vzorce ve 2D
 * Vzdálenost dvou různých bodů (vzniká vektor)
   * $|B-A|=\vec{AB}=\sqrt{(x_B-x_A)^2+(y_B-x_A)^2}$
 * Vzdálenost bodu od přímky
@@ -100,6 +101,47 @@
   *  Rovnobězné a totožné se dají od sebe odlišit tak, že se určíme jeden bod na jedné přímce a spočítáme vzdálenost bodu od přímky
   *  Vzdálenost dvou rovnoběžných přímek, kdy $p=ax+by+c_p=0$ a $q=ax+by+c_q=0$:
      *  $d=\frac{|c_p-c_q|}{\sqrt{a^2+b^2}}$
+* Trojúhelník - Vypočítá se vektorovým součinem 2 jeho stran děleno 2.
+* Čtyřstěn - vypočítá se smíšeným součinem 
+----
+## Lineární množiny v rovině
+Je dosti podobný 2D, avšak jsou tu odlišnosti jako třeba převod normálového na směrový vektor
+* Přímka v prostoru:
+  * Nemá obecnou rovnici
+  * Parametricky:
+    * $x=x_A+s_1*t$
+    * $y=y_A+s_2*t$
+    * $z=z_A+s_3*t$
+    * Bod $A=[x_A,y_A,z_A]$, směrový vektor $\vec{s}=(s_1,s_2,s_3)$
+  * Kanonický:
+    * $\frac{x-x_A}{s_1}=\frac{y-y_A}{s_2}=\frac{z-z_A}{s_3}$
+    * Bod $A=[x_A,y_A,z_A]$, směrový vektor $\vec{s}=(s_1,s_2,s_3)$
+  * Průnik 2 různoběžných rovin
+    * $a_1*x+b_1*y+c_1*z+d=0$
+    * $a_2*x+b_2*y+c_2*z+d=0$
+* Vzájemnný vztah přímek:
+  * Mimoběžné/rovnoběžné - ani jeden bod
+  * Různoběžné - průsečíkem je jeden bod
+  * Totožné - nekonečno společných bodů
+
+
+* Rovina v prostoru:
+  1. Obecná rovnice roviny
+     * $ax + by + cz + d = 0$ 
+  2. Směrnicová rovnice roviny
+     * $z = kx + ly + q$ - kdy $q$ je souřadnice průsečíku roviny s osou $z$
+  3. Úseková rovnice roviny
+     * $\frac{x}{p}+\frac{y}{q}+\frac{z}{r}=1$ - růsečíky s osami 𝑥,𝑦,𝑧 jsou po řadě body $[𝑝,0,0],[0,𝑞,0],[0,0,𝑟]$
+  4. Parametricická rovnice roviny
+     * $x=x_A+u_1*s+v_1*t$
+     * $y=y_A+u_2*s+v_2*t$
+     * $z=z_A+u_3*s+v_3*t$
+     * Opět se dá zjistit bod $A=[x_A,y_A,z_A]$, dále se dají zjistit 2 směrové vektory $\vec{s_1}=(u_1,u_2,u_3)$ a $\vec{s_2}=(v_1,v_2,v_3)$ => tím se dá vypočítat normálový vektor $\vec{n}=\vec{s_1}*\vec{s_2}$
+* Roviny mohou být
+  * Rovnoběžné - nemají společný žádný bod
+  * Totožné - nekonečno společných bodů
+  * Různoběžné - průsečíkem je vektor
+### Vzorce ve 3D
 
 
 
@@ -109,3 +151,7 @@
 
 * Úhel dvou vektorů
   * $\cos\alpha=\frac{u * v}{|u|*|v|}=\frac{u_1 * v_1+u_2 * v_2+u_3*v_3}{\sqrt{u_1^2+u_2^2+u_3^2}*\sqrt{v_1^2+v_2^2+v_3^2}}$
+
+* Vzdálenost mimoběžek
+  * $d=\frac{|(u v w)|}{|u x v|}$ 
+  * Kdy $\vec{u}$... směrový vektor první přímky, $\vec{v}$... směrový vektor první přímky a vektor $\vec{w}=\vec{AB}$, kdy bod A je na první přímky a B druhé
