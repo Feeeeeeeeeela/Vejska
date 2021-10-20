@@ -2,7 +2,6 @@
 
 pouze zápočet
 
-"test" každou hodinu
-
+Nějaké testy
 
 1. Matlab
