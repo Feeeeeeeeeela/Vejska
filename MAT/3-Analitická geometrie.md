@@ -141,9 +141,6 @@ Je dosti podobný 2D, avšak jsou tu odlišnosti jako třeba převod normálové
   * Rovnoběžné - nemají společný žádný bod
   * Totožné - nekonečno společných bodů
   * Různoběžné - průsečíkem je vektor
-### Vzorce ve 3D
-
-
 
 ### Vzorce:
 * Délka vektoru

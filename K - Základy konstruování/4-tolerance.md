@@ -1,9 +1,8 @@
-# Tolerování délkových rozměrů
 ### 3 základní druhy:
 1. Tolerování délkových rozměrů
 2. Tolerování geometrické
 3. Tolerování textury povrchu (drsnost)
-
+# Tolerování délkových rozměrů
 ### Pojmy:
 * Jmenovitý rozměr - rozměr, kterému se na výkresu stanoví mezní horní a dolní úchylky
 * Skutečný rozměr - rozměr zjištění meřením
@@ -89,3 +88,29 @@ $IT_N=k*i$
 ## Všeobecné tolerance
 ![všeobecnétolerance](img/nepředepsané.png)
 ![](img/nepředepsané2.png)
+
+# Tolerování textury povrchu (drsnost)
+* definice - náhodné úchylky od přesného geometrického tvaru plochy způsobené výrobou
+* 3 složky:
+  * Drsnost povrchu - R
+  * Vlnitost povrchu - W
+  * Základní profil - P
+  ![](img/povrch.png)
+* Hodnocení povrchu:
+  * profilová metoda - hrotem - jeden řez 
+  * plošná metoda - opticky - celá plocha
+* Filtrování - "odstranění vlny"
+  * ![](img/povrch2.png)
+* ## Profil drsnosti:
+  ![](img/povrch3.png)
+  * $R_p$ - hloubka prohlubně
+  * $R_v$ - hloubka výstupku
+  * $R_z$ - největší výška profilu $R_z$ = $R_vmax$ + $R_pmax$
+  * $R_a$ - průměrná aritmetická úchylka $R_a = \frac{1}{1_r}*\int_{1_r}^{0}/Z(x)*dx$ 
+  * $R_q$ - průměrná kvadratická úchylka $R_q = \frac{1}{1_r}*\int_{1_r}^{0}/Z^2(x)*dx$ (je o něco výš než $R_a$)
+
+* ## Předpis:
+![](img/povrch4.png)
+* Varianty:
+![](img/povrch5.png)
+
