@@ -86,7 +86,7 @@
        * Rovnice dokáže popsat všechny přímky, avšak přímka má mnoho zápisů, protože může začínat z libovolného bodu přímky
        * Směrový vektor $s=(s_1,s_2)$, Normálový vektor $n=\pm(-s_2,s_1)$
 
-### Vzorce ve 2D
+### Vzorce
 * Vzdálenost dvou různých bodů (vzniká vektor)
   * $|B-A|=\vec{AB}=\sqrt{(x_B-x_A)^2+(y_B-x_A)^2}$
 * Vzdálenost bodu od přímky
@@ -137,7 +137,7 @@ Je dosti podobný 2D, avšak jsou tu odlišnosti jako třeba převod normálové
      * $y=y_A+u_2*s+v_2*t$
      * $z=z_A+u_3*s+v_3*t$
      * Opět se dá zjistit bod $A=[x_A,y_A,z_A]$, dále se dají zjistit 2 směrové vektory $\vec{s_1}=(u_1,u_2,u_3)$ a $\vec{s_2}=(v_1,v_2,v_3)$ => tím se dá vypočítat normálový vektor $\vec{n}=\vec{s_1}*\vec{s_2}$
-* Roviny mohou být
+* Vzájemný vztah rovin
   * Rovnoběžné - nemají společný žádný bod
   * Totožné - nekonečno společných bodů
   * Různoběžné - průsečíkem je vektor
@@ -147,7 +147,7 @@ Je dosti podobný 2D, avšak jsou tu odlišnosti jako třeba převod normálové
   * $|u|=\sqrt{u * u} = \sqrt{u^2_1+u^2_2+ \cdot + u^2_n}$
 
 * Úhel dvou vektorů
-  * $\cos\alpha=\frac{u * v}{|u|*|v|}=\frac{u_1 * v_1+u_2 * v_2+u_3*v_3}{\sqrt{u_1^2+u_2^2+u_3^2}*\sqrt{v_1^2+v_2^2+v_3^2}}$
+  * $\cos\alpha=\frac{|u * v|}{|u|*|v|}=\frac{u_1 * v_1+u_2 * v_2+u_3*v_3}{\sqrt{u_1^2+u_2^2+u_3^2}*\sqrt{v_1^2+v_2^2+v_3^2}}$
 
 * Vzdálenost mimoběžek
   * $d=\frac{|(u v w)|}{|u x v|}$ 
