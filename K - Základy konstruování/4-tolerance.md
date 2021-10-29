@@ -106,11 +106,24 @@ $IT_N=k*i$
   * $R_p$ - hloubka prohlubně
   * $R_v$ - hloubka výstupku
   * $R_z$ - největší výška profilu $R_z$ = $R_vmax$ + $R_pmax$
-  * $R_a$ - průměrná aritmetická úchylka $R_a = \frac{1}{1_r}*\int_{1_r}^{0}/Z(x)*dx$ 
-  * $R_q$ - průměrná kvadratická úchylka $R_q = \frac{1}{1_r}*\int_{1_r}^{0}/Z^2(x)*dx$ (je o něco výš než $R_a$)
+  * $R_a$ - průměrná aritmetická úchylka $R_a = \frac{1}{1_r}* \int_{1_r}^{0}/Z(x)*dx$ 
+  * $R_q$ - průměrná kvadratická úchylka $R_q = \frac{1}{1_r}* \int_{1_r}^{0}/Z^2(x)*dx$ (je o něco výš než $R_a$)
 
 * ## Předpis:
 ![](img/povrch4.png)
 * Varianty:
 ![](img/povrch5.png)
-
+---
+# Geometrické tolerance
+- jsou používány nad rámec délkových tolerancí, definují přesněji tvar funkčních ploch
+- přesnosti:
+  1. pro jeden prvek - tvaru
+  2. vůči všem - orientace, umístění, házení
+## Značka:
+* šipka je vždy kolmo na součást
+![](img/geometrie1.png)
+![](img/geometrie2.png)
+## Ohraničení
+![](img/geometrie3.jpg)
+## Všeobecné tolerance
+![](img/geometrie4.png)
