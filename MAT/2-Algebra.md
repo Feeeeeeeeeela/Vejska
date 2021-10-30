@@ -1,7 +1,7 @@
 # Matice
 $A \in R^{m*n}$ => A je typu (m,n)... m = počet řádků, n = počet sloupců
 * $A(n,n)$ = čtvercová matice
-* $0$ = nulová matice.. obrahuje pouze nuly
+* $0$ = nulová matice.. obsahuje pouze nuly
 * $E / I$ = Jedničková.. Jedničky jsou na diagonále, !vždy musí být čtverec
 * $D / H$ = Dolní/horní trojúhelníková matice (Obsahuje 0 v horním nebo dolním "trojúhelníku")
 
