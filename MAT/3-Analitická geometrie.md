@@ -31,7 +31,7 @@
 * Skalární součin 
   * Výsledkem je číslo
   * Pokud je výsledkem 0... vektory jsou kolmé
-  * $\vec{u}*\vec{v}=(u_x*v_x, u_y*v_y, u_z*v_z)$
+  * $\vec{u}*\vec{v}=(u_x*v_x+u_y*v_y+u_z*v_z)$
   * $\vec{u}*\vec{v}=|\vec{u}|*|\vec{v}|*\cos\alpha$ - z toho je možné vyjádřit $\cos\alpha$
   * $\cos\alpha=\frac{u * v}{|u|*|v|}=\frac{u_1 * v_1+u_2 * v_2+u_3*v_3}{\sqrt{u_1^2+u_2^2+u_3^2}*\sqrt{v_1^2+v_2^2+v_3^2}}$
   * pokud $\vec{u}*\vec{v}=0$ vektory jsou na sebe kolmé
@@ -123,11 +123,18 @@ Je dosti podobný 2D, avšak jsou tu odlišnosti jako třeba převod normálové
   * Mimoběžné/rovnoběžné - ani jeden bod
   * Různoběžné - průsečíkem je jeden bod
   * Totožné - nekonečno společných bodů
+  * Postup pro zjištění:
+    * Pokud $\vec{s_p} = n*\vec{s_q}$ jsou násobkem, tak jsou:
+      * Totožné - vektor $\vec{AB}$ (kdy A je na jedné přímce, B na druhé) je násobkem vektoru $\vec{p}$ nebo $\vec{q}$
+      * Rovnoběžné - $\vec{AB}$ není násobkem
+    * Pokud směrové vektory nejsou násobky, tak se vypočítá smíšený součin $(\vec{p}\vec{q}\vec{w})$, kdy $\vec{w}=\vec{AB}$
+      * Různoběžné - Pokud je výsledek 0
+      * Mimoběžné - Výsledek je nenulový
 
-
+----
 * Rovina v prostoru:
   1. Obecná rovnice roviny
-     * $ax + by + cz + d = 0$ 
+     * $ax + by + cz + d = 0$ - kdy $\vec{n}=(a,b,c)$
   2. Směrnicová rovnice roviny
      * $z = kx + ly + q$ - kdy $q$ je souřadnice průsečíku roviny s osou $z$
   3. Úseková rovnice roviny
@@ -141,6 +148,12 @@ Je dosti podobný 2D, avšak jsou tu odlišnosti jako třeba převod normálové
   * Rovnoběžné - nemají společný žádný bod
   * Totožné - nekonečno společných bodů
   * Různoběžné - průsečíkem je vektor
+  * Postup pro zjištění:
+    * Normálové vektory jsou násobkem:
+      * Totožné - platí že $d=n*d´$ je násobken
+      * Různoběžné - neplatí, že $d$ rovin jsou svým násobkem
+    * Normálové vektory nejsou násobkem:
+      * Růžnoběžné
 
 ### Vzorce:
 * Délka vektoru
