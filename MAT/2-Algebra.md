@@ -54,9 +54,9 @@ $A \in R^{m*n}$ => A je typu (m,n)... m = počet řádků, n = počet sloupců
 ![závislost](img/závislost.png)
 ### Lineární řádkové úpravy matic
 
-1. Změna pořadí sloupců/řádku
+1. Změna pořadí řádku
 2. Sloupec/řádek vynásobíme nenulovým číslem
-3. Ke sloupci přičteme lineární kombinaci jiných sloupců (samozřejmě se může i násobek)
+3. Ke řádku přičteme lineární kombinaci jiných řádků(samozřejmě se může i násobek)
 4. Vypustíme nulový sloupec
 ### Hodnost
 
