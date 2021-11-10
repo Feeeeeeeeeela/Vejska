@@ -143,7 +143,7 @@ Je dosti podobný 2D, avšak jsou tu odlišnosti jako třeba převod normálové
      * $x=x_A+u_1*s+v_1*t$
      * $y=y_A+u_2*s+v_2*t$
      * $z=z_A+u_3*s+v_3*t$
-     * Opět se dá zjistit bod $A=[x_A,y_A,z_A]$, dále se dají zjistit 2 směrové vektory $\vec{s_1}=(u_1,u_2,u_3)$ a $\vec{s_2}=(v_1,v_2,v_3)$ => tím se dá vypočítat normálový vektor $\vec{n}=\vec{s_1}*\vec{s_2}$
+     * Opět se dá zjistit bod $A=[x_A,y_A,z_A]$, dále se dají zjistit 2 směrové vektory $\vec{s_1}=(u_1,u_2,u_3)$ a $\vec{s_2}=(v_1,v_2,v_3)$ => tím se dá vypočítat normálový vektor $\vec{n}=\vec{s_1}$x$\vec{s_2}$
 * Vzájemný vztah rovin
   * Rovnoběžné - nemají společný žádný bod
   * Totožné - nekonečno společných bodů
@@ -151,7 +151,7 @@ Je dosti podobný 2D, avšak jsou tu odlišnosti jako třeba převod normálové
   * Postup pro zjištění:
     * Normálové vektory jsou násobkem:
       * Totožné - platí že $d=n*d´$ je násobken
-      * Různoběžné - neplatí, že $d$ rovin jsou svým násobkem
+      * Rovnoběžné - neplatí, že $d$ rovin jsou svým násobkem
     * Normálové vektory nejsou násobkem:
       * Růžnoběžné
 

@@ -127,3 +127,57 @@ $IT_N=k*i$
 ![](img/geometrie3.jpg)
 ## Všeobecné tolerance
 ![](img/geometrie4.png)
+
+## Základny
+![](img/základny.png)
+
+## Cílené (dílčí) základny
+* u kompikovanějších součástí (reflektory u aut)
+* Použití v případech, kdy předpis celé plochy jako
+základního prvku může způsobit nestejné výsledky při
+opakovaných měřeních
+* pomocí bodů a ploch
+![](img/dílčízákladny.png)
+
+# Kótování roztečí děr
+1. Kótování nefunkčních děr - Díry nenavazují na tvarové prvky v jiné součásti (odlehčovací otvory, větrací mřížky a pod.)
+![](img/díry.png)
+2. Kótování funkčních děr - díry funkčně navazují na tvarové prvky, díry zhotovené společně nebo podle děr vyrobených v
+jedné součásti (díry, které mají zajišťovat stálou polohu
+spojovaných součástí – pro kolíky, čepy, nýty a pod.)
+![](img/díry1.png)
+* Kótování polohy pomocí tolerance polohy os děr
+![](img/díry2.png)
+![](img/díry3.png)
+* Kótování polohy pomocí mezních úchylek roztečí os děr
+![](img/díry4.png)
+---
+# Závislé tolerance
+* Pro výkresy, které tvoří nějaké uložení
+* "Tolerance se přepočítává dle "požadavku"
+1. Požadavek obalové plochy - E (V kroužku)
+   ![](img/závislost.png)
+   * má opodstatnění v místech uložení
+   * stanovuje závislost mezi tolerancí rozměru a tvaru (zaručení tvarové přesnosti)
+   1. Požadavek obalové plochy na hřídeli
+   ![](img/závislost1.png)
+   * kontrola dmax nesmí být překročena
+   * dmin je z hlediska smontovatelnosti „nezajímavý“
+   1. Požadavek obalové plochy v díře
+   ![](img/závislost2.png)
+   * Kontroluje se dmin
+
+2. Požadavek maxima materiálu - M
+   * nedosahuje-li skutečný rozměr prvku rozměru maxima materiálu, je možné překročit předepsanou geometrickou toleranci, aniž by byla ohrožena smontovatelnost součástí.
+   * Závisí na maximu materiálu (MMS)
+  ![](img/závislost3.png)
+   * Interpretace 
+  ![](img/závislost4.png)
+3. Požadavek minima materiálu - L
+   * Jestliže skutečný rozměr nedosahuje své meze minima materiálu, může se předepsaná geometrická tolerance zvětšit o hodnotu rozdílu mezi skutečným rozměrem a mezí minima materiálu  
+   * Podobně jako M, ale závisí na nejméně materiálu (LMS)
+  ![](img/závislost5.png)
+4. Požadavek reciprocity - R
+   * Požadavek reciprocity – RPR (reciprocity requirement) se používá jako doplněk za maximem materiálu M R nebo minimem materiálu L R. 
+   * Vytváří možnost "nazpět" zvětšení/zmenšení v tolerovaném rozměru
+   ![](img/závislost6.png)
