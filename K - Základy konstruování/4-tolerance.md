@@ -145,7 +145,10 @@ opakovaných měřeních
 2. Kótování funkčních děr - díry funkčně navazují na tvarové prvky, díry zhotovené společně nebo podle děr vyrobených v
 jedné součásti (díry, které mají zajišťovat stálou polohu
 spojovaných součástí – pro kolíky, čepy, nýty a pod.)
-![](img/díry1.png)
+* 2 typy:
+  * A - šroub a matice (díra pro šroub) - vůle $T=K*v_{min}$
+  * B - šroub a závit (pouhý závit) - vůle je poloviční $T=0.5K*v_{min}$
+* ![](img/díry1.png)
 * Kótování polohy pomocí tolerance polohy os děr
 ![](img/díry2.png)
 ![](img/díry3.png)
