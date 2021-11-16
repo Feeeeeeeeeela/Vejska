@@ -24,3 +24,6 @@ Normy strany:
     2. MB podložka - str. 139 (v řezu potřebujeme "f1" a "M", př kdy f1=6b14 a M=37.5C11 převedeme na f1=6bH14 a M=37.5h11)
     3. Detail drážky v závitu - str. 72 (dle rozteče určíme "dg" a "g2", kdy kótujeme rozteč-dg... též přidáme h12 nebo h13 (kdy h13 je pro větší než M3))
     4. Délky drážek určujeme ze "zkušenosti" - (šířka drážky+ šířka pojistné matice("B" na str.138)+šířka podložky("B" na str. 139)... přidáme pár navíc, délku celé drážky též o pár mm zvětšíme)
+  * Zápichy
+  * Pojistný kroužek
+  * Díra s válcovým zahloubením 
