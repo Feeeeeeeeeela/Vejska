@@ -32,7 +32,7 @@
 * Ze statistického rozložení vyrobených rozměrů vyplývá, že nejčastěji se vyskytujícím rozměrem je ten, který leží přibližně uprostřed mezi horním a dolním mezním rozměrem
 ![gaus](img/gaus.png)
 
-### Mezní kalibry
+### Mezní kalibry       
 * nástroje, které rychle zkontrolují skutečný rozměr v toleranci
 * využívaj se hlavně u výrobků, kterých se vyrábí hodně
 ![kalibry](img/kalibry.png)
@@ -47,7 +47,7 @@ výrobu polotovarů
 ## Výpočet IT:
 $IT_N=k*i$
 * k = násobek
-* i = toleranční jednotka ($i=0.45*\sqrt[3]{D}+0,001*D$), kdy $D$ je "průměrná délka $D=\sqrt{(D_1 * D_2)}$
+* i = toleranční jednotka ($i=0.45*\sqrt[3]{D}+0,001*D$), kdy $D$ je "průměrná délka $D=\sqrt{(D_1 * D_2)}$       
 ![vzorec](img/vzorec.png)
 ## Přesnost:
 ![přesnost](img/it2.png)
@@ -67,7 +67,7 @@ $IT_N=k*i$
 ![uložení](img/uložení1.png)
 * Základní uložení hřídele
 ![uložení](img/uložení2.png)
-* Zápis
+* Zápis       
 ![uložení](img/uložení3.png)
 * Doporučená uložení:
   1. Uložení s vůlí:
