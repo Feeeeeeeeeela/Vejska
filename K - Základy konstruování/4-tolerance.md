@@ -110,8 +110,8 @@ $IT_N=k*i$
   * $R_q$ - průměrná kvadratická úchylka $R_q = \frac{1}{1_r}* \int_{1_r}^{0}/Z^2(x)*dx$ (je o něco výš než $R_a$)
 
 * ## Předpis:
-![](img/povrch4.png)
-* Varianty:
+![](img/povrch4.png)      
+* Varianty:        
 ![](img/povrch5.png)
 ---
 # Geometrické tolerance
