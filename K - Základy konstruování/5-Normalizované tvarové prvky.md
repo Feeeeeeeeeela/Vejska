@@ -10,7 +10,7 @@ Normy strany:
 * Normalizované tvarové prvky
   * Závit:
     1. Základní rozměry - str. 12 (př M10, p=1.5)
-    2. Tolerance výrobních tříd - str. 64 (nejčastěji se vybárá B (6g=>6h), př M10-h6)
+    2. Tolerance výrobních tříd - str. 64 (nejčastěji se vybírá B (6g=>6h), př M10-h6)
     3. Doporučené průměry vrtáků - str. 17 (podle průměru a rozteče, př 8.5)
     4. Délky zašroubování závitu - str. 18 (podle průměru a rozteče, př záleží podle sil, od 5 do 15)
     5. Výběry vnitřního metrického závitu - str. 70 (podle průměru a rozteče, "a", př. 4)
