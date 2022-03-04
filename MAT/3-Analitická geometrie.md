@@ -15,7 +15,7 @@
 
 ### Vzorce:
 * Výpočet délky:
-  * $|\vec{u}|=\sqrt{u_x^2 + u_y^2 + u_z^2}$
+  * $|\vec{u}|=\sqrt{u_x^2, u_y^2, u_z^2}$
 * Úhly    
  ![úhly](img/anal1.png)
   * $u_x=|\vec{u}|*\cos\alpha$
@@ -104,7 +104,7 @@
 * Trojúhelník - Vypočítá se vektorovým součinem 2 jeho stran děleno 2.
 * Čtyřstěn - vypočítá se smíšeným součinem 
 ----
-## Lineární množiny v prostoru
+## Lineární množiny v rovině
 Je dosti podobný 2D, avšak jsou tu odlišnosti jako třeba převod normálového na směrový vektor
 * Přímka v prostoru:
   * Nemá obecnou rovnici
