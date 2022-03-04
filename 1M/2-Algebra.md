@@ -17,10 +17,9 @@ $A \in R^{m*n}$ => A je typu (m,n)... m = počet řádků, n = počet sloupců
 
 ### Vlastnosti
 * $(A + B) + C = A + (B + C)$
-* $(A * B) + C = A * (B * C)$
 ---
 * $A + B = B + A$
-* $c * A = C * a$
+* $c * A = c * A$
 * !!!$A * B ≠ B * A$!!!
 ---
 * $A * (B + C) = A * B + A * C$
@@ -55,7 +54,7 @@ $A \in R^{m*n}$ => A je typu (m,n)... m = počet řádků, n = počet sloupců
 ### Lineární řádkové úpravy matic
 
 1. Změna pořadí řádku
-2. Sloupec/řádek vynásobíme nenulovým číslem
+2. Řádek vynásobíme nenulovým číslem
 3. Ke řádku přičteme lineární kombinaci jiných řádků(samozřejmě se může i násobek)
 4. Vypustíme nulový sloupec
 ### Hodnost
