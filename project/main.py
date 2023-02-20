@@ -4,6 +4,7 @@ import yt_ddl
 from pathlib import Path
 import string
 import os
+from subprocess import run
 
 downloads_path = str(Path.home() / "Downloads")
 
@@ -78,7 +79,9 @@ class MyPanel(wx.Panel):
         time=date+"T"+hours+":"+minutes
         dur=str(dur)+"m"
         name=name+".mp4"
-        os.system("yt_ddl.py url -o name --start time --duration dur")
+        args = [url,'--output',name,'--start',time,'--duration',dur]
+        run(['python','yt_ddl.py'] + args)
+        
  
 class MyApp(wx.App):
     def OnInit(self):
