@@ -76,7 +76,7 @@ class MyPanel(wx.Panel):
         if minutes < 10:
             minutes="0"+str(minutes)
         url = str(self.url_ctrl.GetValue())
-        time=date+"T"+hours+":"+minutes
+        time=date+"T"+str(hours)+":"+str(minutes)
         dur=str(dur)+"m"
         name=name+".mp4"
         args = [url,'--output',name,'--start',time,'--duration',dur]
