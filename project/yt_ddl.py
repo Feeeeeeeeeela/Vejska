@@ -17,14 +17,14 @@ from lxml.etree import QName, SubElement                # lxml
 import lxml.html                                        # lxml
 import requests                                         # requests
 from requests.adapters import HTTPAdapter               # requests
-from requests.packages.urllib3.util.retry import Retry  # requests
+"""from requests.packages.urllib3.util.retry import Retry  # requests"""
 from tqdm import tqdm                                   # tqdm
 
 s = requests.Session()
-retry = Retry(connect=5, backoff_factor=0.5)
+"""retry = Retry(connect=5, backoff_factor=0.5)
 adapter = HTTPAdapter(max_retries=retry)
 s.mount('http://', adapter)
-s.mount('https://', adapter)
+s.mount('https://', adapter)"""
 get = s.get
 
 av.logging.set_level(av.logging.PANIC)
@@ -335,6 +335,3 @@ def main(**kwargs):
         print("Muxing into file...")
         mux_to_file(kwargs["output"], a_data, v_data)
 
-
-if __name__ == "__main__":
-    main()
