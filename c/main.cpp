@@ -1,15 +1,12 @@
 #include <iostream>
 #include <string>
 #include <map>
-#include <limits>
 
 using namespace std;
-string choice; //menu input
 string input;  //input to translation
-string error_continue;
-string letter;
+string letter; 
 
-bool status = true; 
+bool status = true; //application is running
 
 const map<char,string>Char_Morse={
    {'a', ".-"},{'b', "-..."}, {'c', "-.-."}, {'d', "-.."}, {'e', "."},
@@ -29,16 +26,9 @@ const map<string,char>Morse_Char={
    {"-----", '0'}, {".----", '1'}, {"..---", '2'}, {"...--", '3'}, {"....-", '4'}, {".....", '5'}, {"-....", '6'}, {"--...", '7'}, {"---..", '8'}, {"----.", '9'},
    {"", ' '}, {".-.-.-", '.'}, {"--..--", ','}, {"..--..", '?'}, {"-.-.--", '!'}, {"-..-.", '/'}, {".--.-.", '@'},
 };
-void MainMenu(){
-  cout << "Morse code translator\nSelect mode\n1 - DECODE - Morse to Char\n2 - CODE - Char to Morse\nelse - exit program\nYour option: ";
-  cin >> choice;
-}
-void CharMorse(){
+void CharMorse(){ //char to morse
   try {
-        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // flush input stream
-        cout << "The maximum size of the text is 65,535 characters\nOnly use english alphabet\nYour text: ";
-        getline(cin, input);
-        cout << "Translation\n";
+        cout << "Code\n";
         for(char x : input) {
           x = tolower(x);     
           cout << Char_Morse.at(x);
@@ -47,21 +37,16 @@ void CharMorse(){
         status = false;
   } 
   catch (std::out_of_range& e) {
-    cout << "Invalid character\nTry again :)?\ny/N\n";
-    cin >> error_continue;
-    if (error_continue != "y"){
-      status = false;
-      }
-        
+        cout << "Invalid character";
+        status = false;
   }
+    
+  
 }
 
 void MorseChar(){
   try {
-    cin.ignore(numeric_limits<streamsize>::max(), '\n'); // flush input stream
-    cout << "The maximum size of the text is 65,535 characters\nCode is in .- format separated by spaces\nYour code: ";
-    getline(cin, input);
-    cout << "Translation\n";
+    cout << "Decode\n";
     for (int i = 0; i < input.length(); i++) {
       if (input[i] == ' ') {
         cout << Morse_Char.at(letter);
@@ -75,27 +60,30 @@ void MorseChar(){
     status = false;
   }
   catch (std::out_of_range& e) {
-    cout << "Invalid format of code\nTry again :)?\ny/N\n";
-    cin >> error_continue;
-    if (error_continue != "y"){
-      status = false;
-      }
-        
+    cout << "Invalid format of code";
+    status = false;
   }
 }
 
 
 int main(){
-  MainMenu();
+  
+  cout << "Morse code translator\nSelect mode by writing c/d + space before your text\nc/C - for code\nd/D - for decode\nMorse is in .- format\nYour text:\n";
   while (status) {
-    if (choice == "1") {
+    /*cin.ignore(numeric_limits<streamsize>::max(), '\n'); // flush input stream*/
+    getline(cin, input);
+    if (tolower(input[0]) == 'd') {
+      input.erase(0,1);
+      input.erase(0,1);
       MorseChar();
       } 
-    else if (choice == "2") {
+    else if (tolower(input[0]) == 'c') {
+      input.erase(0,1);
+      input.erase(0,1);
       CharMorse();
       } 
     else {
-      cout << "Application is closing\n";
+      cout << "invalid mode\nClosing application";
       status = false;
       }
   }
